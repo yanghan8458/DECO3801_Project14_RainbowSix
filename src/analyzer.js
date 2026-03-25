@@ -8,7 +8,7 @@ async function analyzePage(url) {
 
   const data = await page.evaluate(() => {
 
-    // ===== 元素提取 =====
+    // ===== Exract elements =====
     function extractElements() {
       return {
         headings: [...document.querySelectorAll("h1,h2,h3,h4,h5,h6")]
@@ -30,7 +30,7 @@ async function analyzePage(url) {
       };
     }
 
-    // ===== DOM结构 =====
+    // ===== DOM structure =====
     function extractDOM(node, depth = 0) {
       if (!node || depth > 5) return null;
 
@@ -42,7 +42,7 @@ async function analyzePage(url) {
       };
     }
 
-    // ===== 统计 + Cognitive Metrics =====
+    // ===== Count + Cognitive Metrics =====
     function extractStats() {
       const text = document.body.innerText || "";
       const words = text.split(/\s+/).filter(Boolean);
@@ -103,18 +103,18 @@ async function analyzePage(url) {
       const hasErrorMessage = text.toLowerCase().includes("error");
 
       return {
-        // 基础统计
+        // Standard Count
         headingCount: headings.length,
         paragraphCount: paragraphs.length,
         linkCount: links.length,
         buttonCount: buttons.length,
         imageCount: images.length,
-
         wordCount: words.length,
         avgSentenceLength,
 
         interactionLoad: links.length + buttons.length,
-
+        
+        // Further features
         layoutDensity,
         navigationMenuCount: navMenus,
         navigationDepth: navDepth,
