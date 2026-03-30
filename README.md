@@ -14,8 +14,6 @@ Ranbowsix code base for project14, HTML exract, mapping and score.
 ## Appendix<br>
 Puppeteer Web Page Analyzer - 
 
-Puppeteer Web Page Analyzer
-
 A web page automation analysis tool built with Puppeteer (headless browser), designed to extract HTML elements, perform basic statistics (briefly mentioned), and generate structured analysis reports.
 
 Core Function
