@@ -1,4 +1,5 @@
 const { analyzePage } = require("./src/analyzer");
+const { calculateScores } = require("./src/scorer");
 
 const fs = require("fs").promises;
 const path = require("path");
@@ -11,14 +12,17 @@ if (!url) {
 }
 
 analyzePage(url).then(async (result) => {
+  
+  result.scores = calculateScores(result.analysis);
+
   const output = JSON.stringify(result, null, 2);
   console.log(output);
 
-  // Create outputs folder
+  // 创建 outputs 文件夹
   const outputDir = path.join(__dirname, "outputs");
   await fs.mkdir(outputDir, { recursive: true });
 
-  // File name = URL + timestamp
+  // 文件名 = URL + 时间戳
   const safeUrl = url.replace(/https?:\/\//, "").replace(/[\/:?&=]/g, "_");
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
 
@@ -26,8 +30,8 @@ analyzePage(url).then(async (result) => {
   const filePath = path.join(outputDir, filename);
 
   await fs.writeFile(filePath, output, "utf8");
-  console.log(`✅ Result has been saved to the file：${filePath}`);
+  console.log(`✅ 结果已保存到文件：${filePath}`);
 }).catch(err => {
-  console.error("❌ Analysis failure：", err.message);
+  console.error("❌ 分析失败：", err.message);
   process.exit(1);
 });
