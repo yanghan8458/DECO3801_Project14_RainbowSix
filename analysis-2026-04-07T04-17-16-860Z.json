@@ -1,0 +1,190 @@
+{
+  "url": "https://uq.edu.au/",
+  "scores": {
+    "overallScore": 56,
+    "overallStatus": "warning",
+    "sections": [
+      {
+        "category": "purpose",
+        "score": 100,
+        "status": "good",
+        "metrics": {
+          "titleExists": true,
+          "titleLength": 28,
+          "h1Count": 1,
+          "headingCount": 25,
+          "navCount": 8
+        }
+      },
+      {
+        "category": "findable",
+        "score": 83,
+        "status": "good",
+        "metrics": {
+          "hasSkipLink": true,
+          "hasSearch": true,
+          "headingCount": 25,
+          "navCount": 8,
+          "internalLinkCount": 244,
+          "focusVisibleDetected": false
+        }
+      },
+      {
+        "category": "media",
+        "score": 0,
+        "status": "poor",
+        "metrics": {
+          "videoCount": 0,
+          "audioCount": 0,
+          "captionTrackCount": 0,
+          "videosWithCaptionsRatio": 0,
+          "transcriptLinkCount": 0,
+          "autoplayMediaCount": 0
+        }
+      },
+      {
+        "category": "language",
+        "score": 100,
+        "status": "good",
+        "metrics": {
+          "readabilityScore": 93.04932735426009,
+          "sentenceAverageLength": 24.77777777777778,
+          "paragraphAverageLength": 40.54545454545455,
+          "complexWordRatio": 0.06950672645739911,
+          "jargonCount": 31,
+          "acronymCount": 44,
+          "langAttributeExists": true
+        }
+      },
+      {
+        "category": "visual",
+        "score": 86,
+        "status": "good",
+        "metrics": {
+          "lineLengthEstimate": 3.5425,
+          "textSpacingSupport": true,
+          "reflowSupport": true,
+          "contrastIssueCount": 0,
+          "visualDensityScore": 1004,
+          "whitespaceScore": 2.8227091633466137,
+          "fontResizeSupport": true
+        }
+      },
+      {
+        "category": "forms",
+        "score": 25,
+        "status": "poor",
+        "metrics": {
+          "formFieldCount": 5,
+          "requiredFieldCount": 0,
+          "labelCoverage": 0.4,
+          "hasErrorMessage": false,
+          "hasErrorSuggestion": false,
+          "hasReviewStep": false,
+          "hasConfirmationStep": false,
+          "hasUndoOption": false
+        }
+      },
+      {
+        "category": "distraction",
+        "score": 0,
+        "status": "poor",
+        "metrics": {
+          "animationCount": 0,
+          "flashingElementCount": 0,
+          "autoplayMediaCount": 0,
+          "autoUpdatingContentCount": 0,
+          "hasPauseControl": false,
+          "timedInteractionCount": 0,
+          "hasExtendTimeOption": false
+        }
+      }
+    ]
+  },
+  "insights": [
+    {
+      "section": "media",
+      "metric": "videosWithCaptionsRatio",
+      "value": 0,
+      "problem": "Videos missing captions",
+      "suggestion": "Provide captions for videos",
+      "mapping": {
+        "wcag": "1.2.2 Captions",
+        "iso": "Effectiveness"
+      }
+    },
+    {
+      "section": "language",
+      "metric": "sentenceAverageLength",
+      "value": 24.77777777777778,
+      "problem": "Sentences too long",
+      "suggestion": "Shorten sentences",
+      "mapping": {
+        "wcag": "3.1.5 Reading Level",
+        "iso": "Efficiency"
+      }
+    }
+  ],
+  "artifacts": {
+    "purpose": {
+      "titleExists": true,
+      "titleLength": 28,
+      "h1Count": 1,
+      "headingCount": 25,
+      "navCount": 8
+    },
+    "findable": {
+      "hasSkipLink": true,
+      "hasSearch": true,
+      "headingCount": 25,
+      "navCount": 8,
+      "internalLinkCount": 244,
+      "focusVisibleDetected": false
+    },
+    "media": {
+      "videoCount": 0,
+      "audioCount": 0,
+      "captionTrackCount": 0,
+      "videosWithCaptionsRatio": 0,
+      "transcriptLinkCount": 0,
+      "autoplayMediaCount": 0
+    },
+    "language": {
+      "readabilityScore": 93.04932735426009,
+      "sentenceAverageLength": 24.77777777777778,
+      "paragraphAverageLength": 40.54545454545455,
+      "complexWordRatio": 0.06950672645739911,
+      "jargonCount": 31,
+      "acronymCount": 44,
+      "langAttributeExists": true
+    },
+    "visual": {
+      "lineLengthEstimate": 3.5425,
+      "textSpacingSupport": true,
+      "reflowSupport": true,
+      "contrastIssueCount": 0,
+      "visualDensityScore": 1004,
+      "whitespaceScore": 2.8227091633466137,
+      "fontResizeSupport": true
+    },
+    "forms": {
+      "formFieldCount": 5,
+      "requiredFieldCount": 0,
+      "labelCoverage": 0.4,
+      "hasErrorMessage": false,
+      "hasErrorSuggestion": false,
+      "hasReviewStep": false,
+      "hasConfirmationStep": false,
+      "hasUndoOption": false
+    },
+    "distraction": {
+      "animationCount": 0,
+      "flashingElementCount": 0,
+      "autoplayMediaCount": 0,
+      "autoUpdatingContentCount": 0,
+      "hasPauseControl": false,
+      "timedInteractionCount": 0,
+      "hasExtendTimeOption": false
+    }
+  }
+}
