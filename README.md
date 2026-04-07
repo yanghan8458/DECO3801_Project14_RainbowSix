@@ -15,7 +15,7 @@ Ranbowsix code base for project14, HTML exract, mapping and score.
 - **src/analyzer.js**: 
     - **Media Intelligence**: Added specific logic to detect `<track>` captions in videos and identify autoplay behaviors.
     - **DOM Sanitization**: Implemented cloning and noise removal (scripts/styles) for accurate text metrics.
-- **src/mapping.js**: Formalized the dictionary for all 5 dimensions, including weights, WCAG 2.1 success criteria, and ISO 9241 standards.
+- **src/mapping.js**: Formalized the dictionary for all 5 dimensions, including weights, WCAG 2.2 success criteria, and ISO 9241 standards.
 - **src/scorer.js**: Refined the `scoreMetric` function to handle three logic types: `lowerBetter`, `higherBetter`, and `range`. Added `generateInsights` to filter critical issues.
 
 ---
