@@ -1,4 +1,4 @@
-// src/mapping.js
+// mapping.js
 
 const mapping = {
   // ===== LANGUAGE =====
@@ -32,7 +32,7 @@ const mapping = {
     weight: 1.5,
     problem: "Page too visually dense",
     suggestion: "Reduce clutter and group content",
-    wcag: "1.4.8 Visual Presentation",
+    wcag: "2.5.8 Target Size / 1.4.8 Visual Presentation",
     iso: "Efficiency"
   },
 
@@ -55,7 +55,7 @@ const mapping = {
     weight: 1.5,
     problem: "Form inputs lack labels",
     suggestion: "Add labels to all inputs",
-    wcag: "3.3.2 Labels or Instructions",
+    wcag: "3.3.2 Labels / 3.3.8 Accessible Authentication",
     iso: "Effectiveness"
   },
 
@@ -90,7 +90,7 @@ const mapping = {
     weight: 1,
     problem: "Navigation too deep",
     suggestion: "Flatten navigation structure",
-    wcag: "2.4 Navigable",
+    wcag: "2.4.5 Multiple Ways / 2.4.8 Location",
     iso: "Efficiency"
   }
 };
