@@ -74,22 +74,35 @@ $$Score_{section} = \frac{\sum_{i=1}^{n} (S_i \times W_i)}{\sum_{i=1}^{n} W_i}$$
 
 ### 4. Regulatory & Standards Mapping
 
-Each metric is cross-referenced with international accessibility and usability standards to provide context for the "Insights" section.
+The RainbowSix analyzer cross-references each technical metric with international accessibility (WCAG 2.1) and usability (ISO 9241-11) standards to provide actionable context for the generated insights.
 
-#### 4.1 WCAG 2.1 Success Criteria
-Metrics are mapped to specific WCAG guidelines to help developers achieve compliance:
-* **Perceivable**: `contrastIssueCount`, `videosWithCaptionsRatio`.
-* **Understandable**: `sentenceAverageLength`, `complexWordRatio`.
-* **Operable**: `maxDepth`, `autoplayMediaCount`.
+#### 4.1 WCAG 2.1 Success Criteria Mapping
+Metrics are categorized under the core principles of WCAG to help developers ensure their web content is accessible to all users, including those with cognitive disabilities.
+
+| WCAG Principle | Metric & Success Criteria | Impact on User Experience |
+| :--- | :--- | :--- |
+| **Perceivable** | `contrastIssueCount` (1.4.3/1.4.6)<br>`visualDensityScore` (1.4.8)<br>`videosWithCaptionsRatio` (1.2.2) | Ensures text is readable, layouts are not overwhelming, and multimedia is accessible to users with hearing or visual impairments. |
+| **Operable** | `maxDepth` (2.4.1/2.4.5)<br>`autoplayMediaCount` (2.2.2) | Ensures users can navigate the site easily without being trapped by deep structures or distracted by moving content they cannot control. |
+| **Understandable** | `sentenceAverageLength` (3.1.5)<br>`complexWordRatio` (3.1.3)<br>`labelCoverage` (3.3.2) | Ensures the text is clear and that forms provide sufficient instructions and labels to prevent user error. |
 
 #### 4.2 ISO 9241-11 Usability Model
-Insights are categorized by the ISO usability pillars:
-* **Effectiveness**: Can users complete their tasks? (e.g., Form Labels).
-* **Efficiency**: How much effort is required? (e.g., Reading level, Nav depth).
-* **Satisfaction**: Is the experience comfortable? (e.g., No intrusive autoplay).
+We evaluate the "Quality of Use" by mapping insights to the three pillars of the ISO 9241-11 standard:
 
+* **Effectiveness (Can users complete their tasks?)**
+    * **Form Labels (`labelCoverage`)**: Without labels, users often fail to complete data entry.
+    * **Vocabulary (`complexWordRatio`)**: Jargon-heavy text leads to a failure in information retrieval.
+    * **Contrast (`contrastIssueCount`)**: Poor visibility prevents users from correctly identifying interface elements.
+* **Efficiency (How much effort is required?)**
+    * **Reading Level (`sentenceAverageLength`)**: Long sentences increase the cognitive load and time required to process information.
+    * **Navigational Depth (`maxDepth`)**: Deeply nested menus increase the physical and mental effort (number of clicks) to reach content.
+    * **Visual Complexity (`visualDensityScore`)**: Cluttered pages increase "search time" for specific actions or info.
+* **Satisfaction (Is the experience comfortable?)**
+    * **Control over Media (`autoplayMediaCount`)**: Unexpected audio or video significantly lowers user satisfaction and can cause anxiety or physical discomfort (e.g., for users with vestibular disorders).
 
-### 5. Performance & Safety
-* **Headless Execution**: Minimizes CPU/RAM overhead by running Chromium without a GUI.
-* **Timeout Protection**: A 60-second `goto` timeout prevents the process from hanging on broken or slow URLs.
-* **Memory Management**: The `finally` block ensures `browser.close()` is invoked regardless of execution success, preventing orphaned browser processes.
+---
+
+### 5. Scoring Weights & Priority
+Each metric is assigned a `weight` in `mapping.js` (ranging from 1.0 to 1.5). Higher weights indicate metrics that have a more critical impact on accessibility compliance:
+- **High Priority (1.5)**: `sentenceAverageLength`, `visualDensityScore`, `labelCoverage`, `videosWithCaptionsRatio`.
+- **Medium Priority (1.2)**: `contrastIssueCount`, `autoplayMediaCount`.
+- **Standard Priority (1.0)**: `complexWordRatio`, `maxDepth`.
