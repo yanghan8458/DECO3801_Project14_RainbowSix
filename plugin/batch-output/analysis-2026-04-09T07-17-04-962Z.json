@@ -1,0 +1,122 @@
+{
+  "url": "https://www.buzzfeed.com/au",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 62,
+        "overallStatus": "warning",
+        "sections": [
+          {
+            "category": "language",
+            "score": 68,
+            "status": "warning"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 23.033333333333335,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 2603,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 7,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 23.033333333333335,
+        "complexWordRatio": 0.03931500241196334
+      },
+      "visual": {
+        "visualDensityScore": 2603,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0.9
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 7
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.89,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "colorContrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "note": "Insufficient contrast may reduce readability and increase visual effort."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "not_applicable",
+      "imageAlt": "pass",
+      "colorContrast": "fail",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

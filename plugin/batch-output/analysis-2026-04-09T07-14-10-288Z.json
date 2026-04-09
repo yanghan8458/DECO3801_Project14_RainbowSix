@@ -1,0 +1,138 @@
+{
+  "url": "https://www.airbnb.com.au/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 26,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 0,
+            "status": "poor"
+          },
+          {
+            "category": "visual",
+            "score": 85,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 0,
+            "status": "poor"
+          },
+          {
+            "category": "media",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 62.2,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "language",
+          "metric": "complexWordRatio",
+          "value": 0.4694533762057878,
+          "problem": "Too many complex words",
+          "suggestion": "Simplify vocabulary",
+          "mapping": {
+            "wcag": "3.1.3 Unusual Words",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "forms",
+          "metric": "labelCoverage",
+          "value": 0,
+          "problem": "Form inputs lack labels",
+          "suggestion": "Add labels to all inputs",
+          "mapping": {
+            "wcag": "3.3.2 Labels / 3.3.8 Accessible Authentication",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 12,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 62.2,
+        "complexWordRatio": 0.4694533762057878
+      },
+      "visual": {
+        "visualDensityScore": 611,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 12
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 1,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "not_applicable",
+      "imageAlt": "not_applicable",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

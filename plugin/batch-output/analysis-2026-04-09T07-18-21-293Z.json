@@ -1,0 +1,159 @@
+{
+  "url": "https://www.dailymail.co.uk/auhome/index.html",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 32,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 40,
+            "status": "poor"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 33,
+            "status": "poor"
+          },
+          {
+            "category": "media",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 43.58974358974359,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 4749,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "forms",
+          "metric": "labelCoverage",
+          "value": 0.5,
+          "problem": "Form inputs lack labels",
+          "suggestion": "Add labels to all inputs",
+          "mapping": {
+            "wcag": "3.3.2 Labels / 3.3.8 Accessible Authentication",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 118,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 43.58974358974359,
+        "complexWordRatio": 0.04019607843137255
+      },
+      "visual": {
+        "visualDensityScore": 4749,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0.5
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 118
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.52,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "linkName",
+        "title": "Links do not have a discernible name",
+        "note": "Some links may be unclear out of context, which can reduce navigation clarity."
+      },
+      {
+        "key": "imageAlt",
+        "title": "Image elements do not have `[alt]` attributes",
+        "note": "Some informative images may lack alternative text."
+      },
+      {
+        "key": "colorContrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "note": "Insufficient contrast may reduce readability and increase visual effort."
+      },
+      {
+        "key": "htmlHasLang",
+        "title": "`<html>` element does not have a `[lang]` attribute",
+        "note": "Missing page language metadata can reduce compatibility with assistive technologies."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "fail",
+      "label": "not_applicable",
+      "imageAlt": "fail",
+      "colorContrast": "fail",
+      "htmlHasLang": "fail",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

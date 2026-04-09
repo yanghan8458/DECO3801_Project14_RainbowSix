@@ -1,6 +1,5 @@
 const { analyzePage } = require("./src/analyzer");
 const { calculateScores } = require("./src/scorer");
-const { runLighthouseWithPlugin } = require("./lighthouse");
 
 const fs = require("fs").promises;
 
@@ -13,15 +12,6 @@ if (!url) {
 
 analyzePage(url).then(async (result) => {
 
-  const lhr = await runLighthouseWithPlugin(url);
-
-  result.lighthouse = {
-      categories: lhr.categories,
-      audits: lhr.audits,
-    };
-
-  const lhroutput = JSON.stringify(result, null, 2);
-  
   if (!result.artifacts) {
     console.error("❌ No artifacts returned");
     process.exit(1);
@@ -38,7 +28,6 @@ analyzePage(url).then(async (result) => {
   const output = JSON.stringify(finalOutput, null, 2);
 
   console.log(output);
-  console.log(lhroutput);
 
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
   const filename = `analysis-${timestamp}.json`;

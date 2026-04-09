@@ -27,10 +27,16 @@ async function runLighthouseWithPlugin(url) {
       settings: {
         plugins: ['lighthouse-plugin-cognitive'],
         onlyAudits: [
-          'link-name',
-          'image-alt',
-          'heading-order',
-          'label',
+          "heading-order",
+          "link-name",
+          "label",
+          "image-alt",
+          "color-contrast",
+          "html-has-lang",
+          "valid-lang",
+          "button-name",
+          "aria-valid-attr",
+          "aria-valid-attr-value"
         ],
       },
     };

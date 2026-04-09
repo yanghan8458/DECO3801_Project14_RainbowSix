@@ -1,0 +1,133 @@
+{
+  "url": "https://www.bbc.com/news",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 44,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 38,
+            "status": "poor"
+          },
+          {
+            "category": "visual",
+            "score": 49,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 0,
+            "status": "poor"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 33,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 29.916666666666668,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 1132,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "forms",
+          "metric": "labelCoverage",
+          "value": 0,
+          "problem": "Form inputs lack labels",
+          "suggestion": "Add labels to all inputs",
+          "mapping": {
+            "wcag": "3.3.2 Labels / 3.3.8 Accessible Authentication",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 4,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 29.916666666666668,
+        "complexWordRatio": 0.11350974930362116
+      },
+      "visual": {
+        "visualDensityScore": 1132,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 4
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.84,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "buttonName",
+        "title": "Buttons do not have an accessible name",
+        "note": "Buttons without clear names may reduce action clarity."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "not_applicable",
+      "imageAlt": "pass",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "fail",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

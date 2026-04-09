@@ -1,0 +1,144 @@
+{
+  "url": "https://edition.cnn.com/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 37,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 40,
+            "status": "poor"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 85,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 18,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 52.794871794871796,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 3159,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "autoplayMediaCount",
+          "value": 3,
+          "problem": "Too many autoplay media elements",
+          "suggestion": "Disable autoplay or add controls",
+          "mapping": {
+            "wcag": "2.2.2 Pause, Stop, Hide",
+            "iso": "Satisfaction"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 5,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 52.794871794871796,
+        "complexWordRatio": 0.054881010199125786
+      },
+      "visual": {
+        "visualDensityScore": 3159,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0.8076923076923077
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 3
+      },
+      "navigation": {
+        "maxDepth": 5
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.9,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "linkName",
+        "title": "Links do not have a discernible name",
+        "note": "Some links may be unclear out of context, which can reduce navigation clarity."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "fail",
+      "label": "pass",
+      "imageAlt": "pass",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

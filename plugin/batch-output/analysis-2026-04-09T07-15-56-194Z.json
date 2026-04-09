@@ -1,0 +1,122 @@
+{
+  "url": "https://www.wikipedia.org/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 55,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 40,
+            "status": "poor"
+          },
+          {
+            "category": "visual",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 36,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 55.42857142857143,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 7,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 55.42857142857143,
+        "complexWordRatio": 0.06701030927835051
+      },
+      "visual": {
+        "visualDensityScore": 316,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 1
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 1
+      },
+      "navigation": {
+        "maxDepth": 7
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.9,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "label",
+        "title": "Form elements do not have associated labels",
+        "note": "Some form controls may lack clear labels, increasing interaction effort."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "fail",
+      "imageAlt": "not_applicable",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "pass",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

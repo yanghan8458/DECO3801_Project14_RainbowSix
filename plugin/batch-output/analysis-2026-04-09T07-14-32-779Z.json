@@ -1,0 +1,105 @@
+{
+  "url": "https://www.ikea.com/au/en/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 66,
+        "overallStatus": "warning",
+        "sections": [
+          {
+            "category": "language",
+            "score": 88,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 2363,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 9,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 17.872340425531913,
+        "complexWordRatio": 0.10178571428571428
+      },
+      "visual": {
+        "visualDensityScore": 2363,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0.9411764705882353
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 9
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 1,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "pass",
+      "imageAlt": "pass",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "pass",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}
