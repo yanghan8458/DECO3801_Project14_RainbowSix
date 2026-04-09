@@ -1,0 +1,158 @@
+{
+  "url": "https://www.tiktok.com/explore",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 56,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 60,
+            "status": "warning"
+          },
+          {
+            "category": "visual",
+            "score": 78,
+            "status": "warning"
+          },
+          {
+            "category": "forms",
+            "score": 0,
+            "status": "poor"
+          },
+          {
+            "category": "media",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 100,
+            "status": "good"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "complexWordRatio",
+          "value": 0.6470588235294118,
+          "problem": "Too many complex words",
+          "suggestion": "Simplify vocabulary",
+          "mapping": {
+            "wcag": "3.1.3 Unusual Words",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 722,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "forms",
+          "metric": "labelCoverage",
+          "value": 0,
+          "problem": "Form inputs lack labels",
+          "suggestion": "Add labels to all inputs",
+          "mapping": {
+            "wcag": "3.3.2 Labels / 3.3.8 Accessible Authentication",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 2.6153846153846154,
+        "complexWordRatio": 0.6470588235294118
+      },
+      "visual": {
+        "visualDensityScore": 722,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 0
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.38,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "headingOrder",
+        "title": "Heading elements are not in a sequentially-descending order",
+        "note": "Heading hierarchy may weaken structural clarity and make content harder to scan."
+      },
+      {
+        "key": "linkName",
+        "title": "Links do not have a discernible name",
+        "note": "Some links may be unclear out of context, which can reduce navigation clarity."
+      },
+      {
+        "key": "label",
+        "title": "Form elements do not have associated labels",
+        "note": "Some form controls may lack clear labels, increasing interaction effort."
+      },
+      {
+        "key": "imageAlt",
+        "title": "Image elements do not have `[alt]` attributes",
+        "note": "Some informative images may lack alternative text."
+      },
+      {
+        "key": "colorContrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "note": "Insufficient contrast may reduce readability and increase visual effort."
+      },
+      {
+        "key": "buttonName",
+        "title": "Buttons do not have an accessible name",
+        "note": "Buttons without clear names may reduce action clarity."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "fail",
+      "linkName": "fail",
+      "label": "fail",
+      "imageAlt": "fail",
+      "colorContrast": "fail",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "fail",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

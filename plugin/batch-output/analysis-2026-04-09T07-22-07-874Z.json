@@ -1,0 +1,88 @@
+{
+  "url": "https://www.msn.com/en-au",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 100,
+        "overallStatus": "good",
+        "sections": [
+          {
+            "category": "language",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 100,
+            "status": "good"
+          }
+        ]
+      },
+      "insights": []
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 0,
+        "complexWordRatio": 0
+      },
+      "visual": {
+        "visualDensityScore": 12,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 1
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 0
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.89,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "colorContrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "note": "Insufficient contrast may reduce readability and increase visual effort."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "not_applicable",
+      "imageAlt": "pass",
+      "colorContrast": "fail",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

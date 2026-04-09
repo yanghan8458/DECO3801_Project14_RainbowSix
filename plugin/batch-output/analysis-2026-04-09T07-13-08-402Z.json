@@ -1,0 +1,127 @@
+{
+  "url": "https://www.amazon.com.au/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 47,
+        "overallStatus": "poor",
+        "sections": [
+          {
+            "category": "language",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 45,
+            "status": "poor"
+          },
+          {
+            "category": "media",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 4594,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "forms",
+          "metric": "labelCoverage",
+          "value": 0.5714285714285714,
+          "problem": "Form inputs lack labels",
+          "suggestion": "Add labels to all inputs",
+          "mapping": {
+            "wcag": "3.3.2 Labels / 3.3.8 Accessible Authentication",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 6,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 9.564551422319475,
+        "complexWordRatio": 0.08876687256920614
+      },
+      "visual": {
+        "visualDensityScore": 4594,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 0.5714285714285714
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 6
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 1,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "pass",
+      "imageAlt": "pass",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "pass",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

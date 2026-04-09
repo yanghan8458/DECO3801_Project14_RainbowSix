@@ -1,0 +1,111 @@
+{
+  "url": "https://www.youtube.com/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 78,
+        "overallStatus": "warning",
+        "sections": [
+          {
+            "category": "language",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 44,
+            "status": "poor"
+          },
+          {
+            "category": "navigation",
+            "score": 100,
+            "status": "good"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "visual",
+          "metric": "visualDensityScore",
+          "value": 1551,
+          "problem": "Page too visually dense",
+          "suggestion": "Reduce clutter and group content",
+          "mapping": {
+            "wcag": "2.5.8 Target Size / 1.4.8 Visual Presentation",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "media",
+          "metric": "videosWithCaptionsRatio",
+          "value": 0,
+          "problem": "Videos lack captions",
+          "suggestion": "Add captions to all videos",
+          "mapping": {
+            "wcag": "1.2.2 Captions",
+            "iso": "Effectiveness"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 13.857142857142858,
+        "complexWordRatio": 0.09278350515463918
+      },
+      "visual": {
+        "visualDensityScore": 1551,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 2.5
+      },
+      "media": {
+        "videosWithCaptionsRatio": 0,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 0
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.88,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "colorContrast",
+        "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+        "note": "Insufficient contrast may reduce readability and increase visual effort."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "not_applicable",
+      "label": "not_applicable",
+      "imageAlt": "pass",
+      "colorContrast": "fail",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

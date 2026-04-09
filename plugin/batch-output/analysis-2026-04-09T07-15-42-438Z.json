@@ -1,0 +1,105 @@
+{
+  "url": "https://www.gov.uk/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 71,
+        "overallStatus": "warning",
+        "sections": [
+          {
+            "category": "language",
+            "score": 68,
+            "status": "warning"
+          },
+          {
+            "category": "visual",
+            "score": 89,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 0,
+            "status": "poor"
+          }
+        ]
+      },
+      "insights": [
+        {
+          "section": "language",
+          "metric": "sentenceAverageLength",
+          "value": 23.08108108108108,
+          "problem": "Sentences are too long",
+          "suggestion": "Use shorter sentences or bullet points",
+          "mapping": {
+            "wcag": "3.1.5 Reading Level",
+            "iso": "Efficiency"
+          }
+        },
+        {
+          "section": "navigation",
+          "metric": "maxDepth",
+          "value": 12,
+          "problem": "Navigation too deep",
+          "suggestion": "Flatten navigation structure",
+          "mapping": {
+            "wcag": "2.4.5 Multiple Ways / 2.4.8 Location",
+            "iso": "Efficiency"
+          }
+        }
+      ]
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 23.08108108108108,
+        "complexWordRatio": 0.0585480093676815
+      },
+      "visual": {
+        "visualDensityScore": 552,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 1
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 12
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 1,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "pass",
+      "imageAlt": "pass",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "pass",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

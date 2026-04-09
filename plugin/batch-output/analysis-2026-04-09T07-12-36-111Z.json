@@ -1,0 +1,82 @@
+{
+  "url": "https://medium.com/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 98,
+        "overallStatus": "good",
+        "sections": [
+          {
+            "category": "language",
+            "score": 89,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 100,
+            "status": "good"
+          }
+        ]
+      },
+      "insights": []
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 6.5,
+        "complexWordRatio": 0.15384615384615385
+      },
+      "visual": {
+        "visualDensityScore": 25,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 1
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 0
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 1,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "pass",
+      "label": "not_applicable",
+      "imageAlt": "not_applicable",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "pass",
+      "ariaValidAttr": "pass",
+      "ariaValidAttrValue": "pass"
+    }
+  }
+}

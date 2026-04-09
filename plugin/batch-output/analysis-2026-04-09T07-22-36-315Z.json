@@ -1,0 +1,93 @@
+{
+  "url": "https://www.reddit.com/",
+  "custom": {
+    "scores": {
+      "scores": {
+        "overallScore": 100,
+        "overallStatus": "good",
+        "sections": [
+          {
+            "category": "language",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "visual",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "forms",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "media",
+            "score": 100,
+            "status": "good"
+          },
+          {
+            "category": "navigation",
+            "score": 100,
+            "status": "good"
+          }
+        ]
+      },
+      "insights": []
+    },
+    "artifacts": {
+      "language": {
+        "sentenceAverageLength": 8,
+        "complexWordRatio": 0.041666666666666664
+      },
+      "visual": {
+        "visualDensityScore": 15,
+        "contrastIssueCount": 0
+      },
+      "forms": {
+        "labelCoverage": 1
+      },
+      "media": {
+        "videosWithCaptionsRatio": null,
+        "autoplayMediaCount": 0
+      },
+      "navigation": {
+        "maxDepth": 0
+      }
+    }
+  },
+  "lighthouse": {
+    "role": "supporting_reference",
+    "summary": {
+      "accessibilityScore": 0.5,
+      "confidence": "high",
+      "availableAuditCount": 10,
+      "trackedAuditCount": 10,
+      "coverageRatio": 1
+    },
+    "findings": [
+      {
+        "key": "linkName",
+        "title": "Links do not have a discernible name",
+        "note": "Some links may be unclear out of context, which can reduce navigation clarity."
+      },
+      {
+        "key": "imageAlt",
+        "title": "Image elements do not have `[alt]` attributes",
+        "note": "Some informative images may lack alternative text."
+      }
+    ],
+    "availableChecks": {
+      "headingOrder": "pass",
+      "linkName": "fail",
+      "label": "not_applicable",
+      "imageAlt": "fail",
+      "colorContrast": "pass",
+      "htmlHasLang": "pass",
+      "validLang": "not_applicable",
+      "buttonName": "not_applicable",
+      "ariaValidAttr": "not_applicable",
+      "ariaValidAttrValue": "not_applicable"
+    }
+  }
+}
